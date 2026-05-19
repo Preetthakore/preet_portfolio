@@ -3,19 +3,22 @@ import Bg from "../assets/Bg.png";
 
 const Home = () => {
   return (
-    <div className="bg-[#0F172A] min-h-screen p-8">
+    <div className="bg-[#0F172A] min-h-screen px-4 sm:px-6 md:px-8 py-8">
 
       {/* Main Container */}
       <div
         className="
+          fade-up
           bg-[#1E293B]
           min-h-[85vh]
-          rounded-[40px]
+          rounded-[24px] sm:rounded-[30px] md:rounded-[40px]
           overflow-hidden
-          flex items-center justify-between
-          px-6 md:px-16
-          shadow-2xl
+          flex flex-col lg:flex-row
+          items-center justify-between
+          px-5 sm:px-8 md:px-10 lg:px-16
+          gap-10
           border border-white/10
+          shadow-2xl
         "
       >
 
@@ -26,26 +29,26 @@ const Home = () => {
             Hi, I am
           </h1>
 
-          <h1 className="text-7xl font-bold text-[#F8FAFC] mb-5 leading-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#F8FAFC] mb-5 leading-tight">
             Preet Thakore
           </h1>
 
-          <h3 className="text-3xl font-semibold text-white mb-5">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-white mb-5">
             Fresher Full Stack Developer
           </h3>
 
-          <p className="text-[#94A3B8] text-lg leading-8 mb-8">
+          <p className="text-sm sm:text-base md:text-lg lg:text-lg text-[#94A3B8] leading-7 md:leading-8 mb-8">
             Passionate Computer Science Engineering student focused on building
             modern web applications using React, Node.js, Express.js,
             and MongoDB.
           </p>
 
           {/* Buttons */}
-          <div className="flex gap-5">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5">
 
             {/* Primary Button */}
-            < a 
-              className=" 
+            <a
+              className="
                 bg-purple-500
                 text-white
                 px-6 py-3
@@ -54,7 +57,7 @@ const Home = () => {
                 hover:scale-105
                 duration-300
                 shadow-lg
-              "  
+              "
               href="#projects"
             >
               View Projects
@@ -70,7 +73,8 @@ const Home = () => {
                 font-semibold
                 hover:bg-[#8B5CF6]
                 duration-300
-              " href="#contact"
+              "
+              href="#contact"
             >
               Contact Me
             </a>
@@ -79,14 +83,13 @@ const Home = () => {
         </div>
 
         {/* Right Image */}
-        <div className="flex items-end justify-center h-full relative">
+        <div className="flex items-end justify-center h-full relative w-full mt-4 lg:mt-0">
 
           {/* Glow Effect */}
           <div
             className="
               absolute
-              w-[350px]
-              h-[350px]
+              w-[260px] h-[260px] sm:w-[320px] sm:h-[320px]
               bg-[#38BDF8]
               opacity-20
               blur-3xl
@@ -98,7 +101,7 @@ const Home = () => {
             src={Bg}
             alt="profile"
             className="
-              w-[450px]
+              w-[280px] sm:w-[380px] md:w-[420px] lg:w-[450px]
               object-contain
               relative
               z-10

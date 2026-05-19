@@ -11,21 +11,22 @@ const About = () => {
     duration: 0.3,
     ease: "easeOut",
   }}
-  viewport={{ amount: 0.2}}
-  className="bg-[#0F172A] min-h-screen text-white px-6 md:px-16 py-20"
+  viewport={{ amount: 0.2 }}
+  className="fade-up bg-[#0F172A] text-white px-4 sm:px-6 lg:px-16 py-10 sm:py-14 lg:py-20"
 >
 
       {/* Heading */}
       <div className="text-center mb-20">
 
-        <h1 className="text-5xl md:text-6xl font-bold">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold">
           About Me
         </h1>
 
       </div>
 
       {/* Main Section */}
-      <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <div className="grid lg:grid-cols-2 gap-10 sm:gap-16 items-center"> 
+
 
         {/* Left Side */}
         <div className="relative flex justify-center">

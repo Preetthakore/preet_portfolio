@@ -10,7 +10,7 @@ const Projects = () => {
     ease: "easeOut",
   }}
   viewport={{ amount: 0.2}}
-  className="bg-[#0F172A] min-h-screen text-white px-6 md:px-16 py-20"
+  className="bg-[#0F172A] min-h-screen text-white px-4 sm:px-6 md:px-16 py-14 sm:py-20"
 >
 
       {/* Heading */}
@@ -29,14 +29,12 @@ const Projects = () => {
         {/* Project Card 1 */}
         <div
           className="
-            bg-[#1E293B]
-            rounded-3xl
-            overflow-hidden
-            border border-white/10
-            hover:border-[#38BDF8]
-            hover:-translate-y-2
-            transition-all duration-300
-            shadow-xl
+            glow-hover
+  bg-[#1E293B]
+  rounded-3xl
+  overflow-hidden
+  border border-white/10
+  shadow-xl
           "
         >
 
@@ -114,14 +112,12 @@ const Projects = () => {
         {/* Project Card 2 */}
         <div
           className="
-            bg-[#1E293B]
-            rounded-3xl
-            overflow-hidden
-            border border-white/10
-            hover:border-[#8B5CF6]
-            hover:-translate-y-2
-            transition-all duration-300
-            shadow-xl
+            glow-hover
+  bg-[#1E293B]
+  rounded-3xl
+  overflow-hidden
+  border border-white/10
+  shadow-xl
           "
         >
 
@@ -198,12 +194,12 @@ const Projects = () => {
         {/* Project Card 3 */}
         <div
           className="
-            bg-[#1E293B]
-            rounded-3xl
-            overflow-hidden
-            border border-white/10
-            hover:border-pink-500
-            hover:-translate-y-2
+              bg-[#1E293B]
+              rounded-3xl
+              overflow-hidden
+              border border-white/10
+              hover:border-pink-500
+              hover:-translate-y-2
             transition-all duration-300
             shadow-xl
           "
